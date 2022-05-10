@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --bgColor: hsl(207, 88%, 81%);
+  --fillColor: #60a7f1;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--bgColor);
+  color: darkblue;
+}
+
+h2,
+h5 {
+  padding: 10px;
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+p {
+  margin-top: 20px;
+}
+
+#percentSpan {
+  font-size: 2rem;
+  padding-top: 20px;
+}
+
+.mainCup,
+.glass {
+  background-color: #fff;
+  color: blue;
+  border-color: blue;
+  border: solid 4px blue;
+  width: 160px;
+  height: 300px;
+  margin-top: 30px;
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.glass.glass {
+  width: 50px;
+  height: 80px;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.cups {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px 30px;
+}
+
+.glass.fill {
+  background-color: var(--fillColor);
+  color: white;
+}
